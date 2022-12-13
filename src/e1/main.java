@@ -13,6 +13,14 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         PrintWriter pw = new PrintWriter(new FileWriter("src/e1/user.txt", true));
         System.out.println("Name: ");
+        String name = scanner.nextLine();
+        System.out.println("Address: ");
+        String address = scanner.nextLine();
+        System.out.println("age: ");
+        int age = scanner.nextInt();
 
+        pw.println(name + "," + address + "," + age);
+        pw.flush();
+        pw.close();
     }
 }
